@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" xmlns="mybatis" targetNamespace="mybatis">
+	<xsd:element name="city" type="city__type" />
+	<xsd:element name="dbmaintain_scripts" type="dbmaintain_scripts__type" />
+	<xsd:complexType name="city__type">
+		<xsd:attribute name="country" use="optional" />
+		<xsd:attribute name="name" use="optional" />
+		<xsd:attribute name="created_at" use="optional" />
+		<xsd:attribute name="id" use="optional" />
+		<xsd:attribute name="state" use="optional" />
+	</xsd:complexType>
+	<xsd:complexType name="dbmaintain_scripts__type">
+		<xsd:attribute name="file_name" use="optional" />
+		<xsd:attribute name="executed_at" use="optional" />
+		<xsd:attribute name="checksum" use="optional" />
+		<xsd:attribute name="file_last_modified_at" use="optional" />
+		<xsd:attribute name="version" use="optional" />
+		<xsd:attribute name="succeeded" use="optional" />
+	</xsd:complexType>
+</xsd:schema>
