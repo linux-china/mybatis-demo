@@ -21,7 +21,7 @@
            http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd"
        default-autowire="byName" default-lazy-init="false">
 
-    <bean id="cityMapper" class="org.mvnsearch.mybatis.CityMapperFactoryBean">
+    <bean id="cityMapper" class="org.mvnsearch.mybatis.domain.infrastructure.mapper.CityMapperFactoryBean">
         <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
     </bean>
 
