@@ -11,9 +11,9 @@ import org.mvnsearch.mybatis.domain.model.City;
  * @author linux_china
  */
 public interface CityMapper {
-    @Select("SELECT * from city WHERE STATE = #{state}")
+    @Select("SELECT * FROM city WHERE STATE = #{state}")
     @ResultMap("CityResultMap")
     City findByState(@Param("state") String state);
 
-
+    City selectCityById(Integer id);
 }
