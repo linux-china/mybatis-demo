@@ -26,4 +26,4 @@ public class MyBatisWebApplication {
 
 ### Integration
 
-* Unitils 3.4.3
+* Unitils 3.4.2
