@@ -5,5 +5,4 @@ CREATE TABLE city (
   state      VARCHAR(32),
   country    VARCHAR(8),
   created_at DATETIME
-) DEFAULT CHARSET utf8;
-
+) DEFAULT CHARSET =  utf8;
