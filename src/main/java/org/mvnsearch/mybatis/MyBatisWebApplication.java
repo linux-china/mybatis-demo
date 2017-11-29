@@ -11,7 +11,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author linux_china
  */
 @SpringBootApplication
-@MapperScan(value = "org.mvnsearch.mybatis.domain.infrastructure.mapper", annotationClass = Mapper.class)
 public class MyBatisWebApplication {
 
     public static void main(String[] args) {
