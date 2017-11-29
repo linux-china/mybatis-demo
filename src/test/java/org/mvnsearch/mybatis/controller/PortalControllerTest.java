@@ -23,7 +23,7 @@ public class PortalControllerTest extends MyBatisBaseTest {
 
     @Test
     @DataSet("/db/dataset/state.xml")
-    public void testGetWishlist() throws Exception {
+    public void testIndexPage() throws Exception {
         this.mvc.perform(get("/index").accept(MediaType.ALL))
                 .andExpect(status().isOk());
     }
