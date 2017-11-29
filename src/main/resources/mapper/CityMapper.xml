@@ -2,7 +2,7 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="org.mvnsearch.mybatis.domain.infrastructure.mapper.CityMapper">
+<mapper namespace="org.mvnsearch.mybatis.domain.repository.CityRepository">
 
     <resultMap id="CityResultMap" type="City">
         <result property="id" column="id"/>
@@ -12,7 +12,9 @@
         <result property="createdAt" column="created_at"/>
     </resultMap>
 
-    <select id="selectCityById" resultMap="CityResultMap">
-        select * from city where ID = #{id} 
+    <select id="findOne" resultMap="CityResultMap">
+        SELECT *
+        FROM city
+        WHERE ID = #{id:INTEGER}
     </select>
 </mapper>
