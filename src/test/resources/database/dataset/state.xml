@@ -1,4 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/dataset.xsd">
-   <city id="1" name="SAN FRANCISCO" state="CA" country="US" created_at="2015-11-10 12:12:12"/>
-</dataset>
