@@ -8,6 +8,7 @@
     name CDATA #IMPLIED
     state CDATA #IMPLIED
     country CDATA #IMPLIED
+    updated_at CDATA #IMPLIED
     created_at CDATA #IMPLIED
 >
 
