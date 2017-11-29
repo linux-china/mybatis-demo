@@ -6,8 +6,8 @@ import org.dbunit.dataset.xml.FlatDtdDataSet;
 import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jdbc.core.JdbcTemplate;
 
+import javax.sql.DataSource;
 import java.io.FileOutputStream;
 
 /**
@@ -18,16 +18,16 @@ import java.io.FileOutputStream;
 public class DataBaseTest extends MyBatisBaseTest {
 
     @Autowired
-    private JdbcTemplate jdbcTemplate;
+    private DataSource dataSource;
 
     @Test
-    public void testSpike() throws Exception {
-        Assert.assertNotNull(jdbcTemplate);
+    public void testConnection() throws Exception {
+        Assert.assertNotNull(dataSource);
     }
 
     @Test
     public void generateDTD() throws Exception {
-        IDatabaseConnection connection = new DatabaseConnection(jdbcTemplate.getDataSource().getConnection());
+        IDatabaseConnection connection = new DatabaseConnection(dataSource.getConnection());
         FlatDtdDataSet.write(connection.createDataSet(), new FileOutputStream("src/test/resources/db/dataset/database.dtd"));
     }
 }
