@@ -4,21 +4,22 @@ Integration with mybatis-spring-boot-starter
 
 ### How to use?
 
-*  Add in application.properties
+*  Add MyBatis configuration in application.properties
 
 ```properties
-mybatis.config= classpath:/mybatis-config.xml
+mybatis.config-location = classpath:/mybatis-config.xml
 
 ```
-* Add @MapperScan for Spring Boot Application
+* Add MyBatisMapperConfiguration to create mapper bean for domain Repository interface.
 
 ```
-@SpringBootApplication
-@MapperScan("org.mvnsearch.mybatis.domain.infrastructure.mapper")
-public class MyBatisWebApplication {
-
-    public static void main(String[] args) {
-        SpringApplication.run(MyBatisWebApplication.class, args);
+@Configuration
+public class MyBatisMapperConfiguration {
+    @Bean
+    public MapperFactoryBean<CityRepository> providerRepository(SqlSessionFactory sqlSessionFactory) {
+        MapperFactoryBean<CityRepository> factoryBean = new MapperFactoryBean<>(CityRepository.class);
+        factoryBean.setSqlSessionFactory(sqlSessionFactory);
+        return factoryBean;
     }
 
 }
@@ -26,4 +27,6 @@ public class MyBatisWebApplication {
 
 ### Integration
 
-* Unitils 3.4.2
+* flywayDB: Database Migrations made Easy https://flywaydb.org/
+* DataBase Rider: https://database-rider.github.io/database-rider/  please refer DateTimeReplacer to datetime replace
+* DbUnit: http://dbunit.sourceforge.net/
