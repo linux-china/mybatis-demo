@@ -1,16 +1,27 @@
 package org.mvnsearch.mybatis;
 
-import org.mybatis.spring.annotation.MapperScan;
-import org.unitils.UnitilsJUnit4;
-import org.unitils.spring.annotation.SpringApplicationContext;
+import com.github.database.rider.core.DBUnitRule;
+import org.junit.Rule;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ActiveProfiles;
+import org.springframework.test.context.junit4.SpringRunner;
+
+import javax.sql.DataSource;
 
 /**
  * mybatis base test
  *
  * @author linux_china
  */
-@SpringApplicationContext({"/appContext-unit.xml"})
-@MapperScan("org.mvnsearch.mybatis.domain.infrastructure.mapper")
-public abstract class MyBatisBaseTest extends UnitilsJUnit4 {
+@RunWith(SpringRunner.class)
+@SpringBootTest
+@ActiveProfiles("test")
+public abstract class MyBatisBaseTest {
+    @Autowired
+    private DataSource dataSource;
 
+    @Rule
+    public DBUnitRule dbUnitRule = DBUnitRule.instance(() -> dataSource.getConnection());
 }
