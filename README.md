@@ -8,8 +8,8 @@ Integration with mybatis-spring-boot-starter
 
 ```properties
 mybatis.config-location = classpath:/mybatis-config.xml
-
 ```
+
 * Add MyBatisMapperConfiguration to create mapper bean for domain Repository interface.
 
 ```
@@ -27,6 +27,7 @@ public class MyBatisMapperConfiguration {
 
 ### Integration
 
-* flywayDB: Database Migrations made Easy https://flywaydb.org/
+* FlywayDB: Database Migrations made Easy https://flywaydb.org/
 * DataBase Rider: https://database-rider.github.io/database-rider/  please refer DateTimeReplacer to datetime replace
+* MyBatis integration with Spring Boot: https://github.com/mybatis/spring-boot-starter
 * DbUnit: http://dbunit.sourceforge.net/
