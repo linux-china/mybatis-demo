@@ -1,7 +1,7 @@
 package org.mvnsearch.mybatis.controller;
 
 import com.github.database.rider.core.api.dataset.DataSet;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.mvnsearch.mybatis.MyBatisBaseTest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;

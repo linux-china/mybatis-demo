@@ -4,7 +4,7 @@ import org.dbunit.database.DatabaseConnection;
 import org.dbunit.database.IDatabaseConnection;
 import org.dbunit.dataset.xml.FlatDtdDataSet;
 import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.sql.DataSource;
@@ -16,7 +16,6 @@ import java.io.FileOutputStream;
  * @author leijuan
  */
 public class DataBaseTest extends MyBatisBaseTest {
-
     @Autowired
     private DataSource dataSource;
 
