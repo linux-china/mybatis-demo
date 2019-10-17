@@ -11,10 +11,10 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
-        <spring-boot.version>2.2.0.M5</spring-boot.version>
-        <database-rider.version>1.7.2</database-rider.version>
+        <spring-boot.version>2.2.0.RELEASE</spring-boot.version>
+        <database-rider.version>1.7.3</database-rider.version>
         <mybatis-spring-boot.version>2.1.0</mybatis-spring-boot.version>
-        <junit5.version>5.5.1</junit5.version>
+        <junit5.version>5.5.2</junit5.version>
     </properties>
 
     <dependencies>
@@ -75,7 +75,7 @@
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
-            <version>1.4.197</version>
+            <version>1.4.200</version>
         </dependency>
         <dependency>
             <groupId>com.github.database-rider</groupId>
