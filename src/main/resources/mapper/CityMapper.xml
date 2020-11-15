@@ -15,7 +15,7 @@
 
     <select id="findOne" resultMap="CityResultMap">
         SELECT *
-        FROM city
+        FROM CITY
         WHERE ID = #{id:INTEGER}
     </select>
 </mapper>
