@@ -1,0 +1,29 @@
+<!ELEMENT dataset (
+    CITY*,
+    schema_version*)>
+
+<!ELEMENT CITY EMPTY>
+<!ATTLIST CITY
+    id CDATA #IMPLIED
+    name CDATA #IMPLIED
+    state CDATA #IMPLIED
+    country CDATA #IMPLIED
+    updated_at CDATA #IMPLIED
+    created_at CDATA #IMPLIED
+>
+
+<!ELEMENT schema_version EMPTY>
+<!ATTLIST schema_version
+    version_rank CDATA #REQUIRED
+    installed_rank CDATA #REQUIRED
+    version CDATA #REQUIRED
+    description CDATA #REQUIRED
+    type CDATA #REQUIRED
+    script CDATA #REQUIRED
+    checksum CDATA #IMPLIED
+    installed_by CDATA #REQUIRED
+    installed_on CDATA #IMPLIED
+    execution_time CDATA #REQUIRED
+    success CDATA #REQUIRED
+>
+
