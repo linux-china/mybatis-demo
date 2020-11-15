@@ -1,9 +1,9 @@
 <!ELEMENT dataset (
-    city*,
+    CITY*,
     schema_version*)>
 
-<!ELEMENT city EMPTY>
-<!ATTLIST city
+<!ELEMENT CITY EMPTY>
+<!ATTLIST CITY
     id CDATA #IMPLIED
     name CDATA #IMPLIED
     state CDATA #IMPLIED
