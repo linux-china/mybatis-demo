@@ -11,8 +11,8 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
-        <spring-boot.version>2.4.0</spring-boot.version>
-        <database-rider.version>1.18.0</database-rider.version>
+        <spring-boot.version>2.4.1</spring-boot.version>
+        <database-rider.version>1.19.0</database-rider.version>
         <mybatis-spring-boot.version>2.1.4</mybatis-spring-boot.version>
         <junit5.version>5.7.0</junit5.version>
     </properties>
