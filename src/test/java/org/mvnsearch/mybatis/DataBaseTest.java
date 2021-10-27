@@ -27,6 +27,6 @@ public class DataBaseTest extends MyBatisBaseTest {
     @Test
     public void generateDTD() throws Exception {
         IDatabaseConnection connection = new DatabaseConnection(dataSource.getConnection());
-        FlatDtdDataSet.write(connection.createDataSet(), new FileOutputStream("target/database.dtd"));
+        FlatDtdDataSet.write(connection.createDataSet(), new FileOutputStream("database.dtd"));
     }
 }
