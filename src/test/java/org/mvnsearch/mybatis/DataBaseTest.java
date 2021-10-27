@@ -3,7 +3,7 @@ package org.mvnsearch.mybatis;
 import org.dbunit.database.DatabaseConnection;
 import org.dbunit.database.IDatabaseConnection;
 import org.dbunit.dataset.xml.FlatDtdDataSet;
-import org.junit.Assert;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -21,7 +21,7 @@ public class DataBaseTest extends MyBatisBaseTest {
 
     @Test
     public void testConnection() throws Exception {
-        Assert.assertNotNull(dataSource);
+        Assertions.assertNotNull(dataSource);
     }
 
     @Test
