@@ -31,3 +31,4 @@ public class MyBatisMapperConfiguration {
 * DataBase Rider: https://database-rider.github.io/database-rider/  please refer DateTimeReplacer to datetime replace
 * MyBatis integration with Spring Boot: https://github.com/mybatis/spring-boot-starter
 * DbUnit: http://dbunit.sourceforge.net/
+* mybatis-spring-native: https://github.com/joshlong/mybatis-spring-native
