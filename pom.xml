@@ -13,7 +13,7 @@
         <java.version>1.8</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
-        <spring-boot.version>2.6.1</spring-boot.version>
+        <spring-boot.version>2.6.2</spring-boot.version>
         <database-rider.version>1.32.0</database-rider.version>
         <mybatis-spring-boot.version>2.2.0</mybatis-spring-boot.version>
         <junit5.version>5.8.2</junit5.version>
