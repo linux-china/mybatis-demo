@@ -4,15 +4,16 @@ Integration with mybatis-spring-boot-starter
 
 ### How to use?
 
-*  Add MyBatis configuration in application.properties
+* Add MyBatis configuration in application.properties
 
 ```properties
-mybatis.config-location = classpath:/mybatis-config.xml
+mybatis.config-location=classpath:/mybatis-config.xml
 ```
 
 * Add MyBatisMapperConfiguration to create mapper bean for domain Repository interface.
 
-```
+```java
+
 @Configuration
 public class MyBatisMapperConfiguration {
     @Bean
@@ -32,3 +33,7 @@ public class MyBatisMapperConfiguration {
 * MyBatis integration with Spring Boot: https://github.com/mybatis/spring-boot-starter
 * DbUnit: http://dbunit.sourceforge.net/
 * mybatis-spring-native: https://github.com/joshlong/mybatis-spring-native
+
+### References
+
+* MyBatis Home: https://github.com/mybatis/mybatis-3
