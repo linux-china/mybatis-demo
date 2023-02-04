@@ -37,3 +37,4 @@ public class MyBatisMapperConfiguration {
 ### References
 
 * MyBatis Home: https://github.com/mybatis/mybatis-3
+* MyBatisX IntelliJ IDEA plugin: https://plugins.jetbrains.com/plugin/10119-mybatisx
