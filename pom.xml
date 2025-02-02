@@ -13,17 +13,17 @@
         <java.version>21</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
-        <spring-boot.version>3.2.0</spring-boot.version>
-        <database-rider.version>1.41.0</database-rider.version>
-        <mybatis-spring-boot.version>3.0.3</mybatis-spring-boot.version>
-        <junit5.version>5.10.1</junit5.version>
+        <spring-boot.version>3.4.2</spring-boot.version>
+        <database-rider.version>1.44.0</database-rider.version>
+        <mybatis-spring-boot.version>3.0.4</mybatis-spring-boot.version>
+        <junit5.version>5.11.4</junit5.version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.jetbrains</groupId>
             <artifactId>annotations</artifactId>
-            <version>24.1.0</version>
+            <version>26.0.2</version>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -45,7 +45,7 @@
         <dependency>
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis</artifactId>
-            <version>3.5.15</version>
+            <version>3.5.19</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -83,7 +83,7 @@
         <dependency>
             <groupId>org.dbunit</groupId>
             <artifactId>dbunit</artifactId>
-            <version>2.7.3</version>
+            <version>3.0.0</version>
         </dependency>
         <dependency>
             <groupId>com.github.database-rider</groupId>
@@ -133,7 +133,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.11.0</version>
+                <version>3.13.0</version>
                 <configuration>
                     <parameters>true</parameters>
                 </configuration>
