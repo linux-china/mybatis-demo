@@ -18,4 +18,11 @@
         FROM CITY
         WHERE ID = #{id:INTEGER}
     </select>
+
+    <select id="findByCountry" resultMap="CityResultMap">
+        SELECT *
+        FROM CITY
+        WHERE COUNTRY = #{country:VARCHAR}
+        ORDER BY NAME
+    </select>
 </mapper>
