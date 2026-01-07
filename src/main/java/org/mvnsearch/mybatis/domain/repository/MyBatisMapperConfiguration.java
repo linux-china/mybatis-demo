@@ -7,11 +7,11 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class MyBatisMapperConfiguration {
-    @Bean
-    public MapperFactoryBean<CityRepository> providerRepository(SqlSessionFactory sqlSessionFactory) {
-        MapperFactoryBean<CityRepository> factoryBean = new MapperFactoryBean<>(CityRepository.class);
-        factoryBean.setSqlSessionFactory(sqlSessionFactory);
-        return factoryBean;
-    }
+  @Bean
+  public MapperFactoryBean<CityRepository> providerRepository(SqlSessionFactory sqlSessionFactory) {
+    MapperFactoryBean<CityRepository> factoryBean = new MapperFactoryBean<>(CityRepository.class);
+    factoryBean.setSqlSessionFactory(sqlSessionFactory);
+    return factoryBean;
+  }
 
 }
