@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 import org.mvnsearch.mybatis.MyBatisBaseTest;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 /**
@@ -13,12 +14,18 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
  * @author linux_china
  */
 public class CityRepositoryTest extends MyBatisBaseTest {
-    @Autowired
-    private CityRepository cityRepository;
+  @Autowired
+  private CityRepository cityRepository;
 
-    @Test
-    @DataSet("/db/dataset/state.xml")
-    public void testOne() {
-        assertNotNull(cityRepository.findOne(1));
-    }
+  @Test
+  @DataSet("/db/dataset/state.xml")
+  public void testOne() {
+    assertNotNull(cityRepository.findOne(1));
+  }
+
+  @Test
+  @DataSet("/db/dataset/state.xml")
+  public void testFindByCountry() {
+    assertThat(cityRepository.findByCountry("US")).isNotEmpty();
+  }
 }
